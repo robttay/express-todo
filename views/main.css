@@ -1,0 +1,11 @@
+body {
+  background-color: yellow;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  background-color: olivedrab;
+}
+
+

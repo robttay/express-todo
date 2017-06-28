@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 
@@ -18,13 +19,19 @@
 
     </form>
     <div>
+    <form action="/mark" method="post">
         <ul>
         {{#todos}}
-        <li><button type="submit">Mark complete</button>&nbsp;{{.}}</1i>
+        <li><button type="submit" name="id" value={{id}}>Mark complete</button>&nbsp;{{todoitem}}</1i>
         <br>
 
         {{/todos}}
         </ul>
+        <br>
+        {{#complete}}
+        {{.}}
+        {{/complete}}
+        </form>
     </div>
 
 
