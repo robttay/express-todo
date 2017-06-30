@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "roberttaylor",
+    "password": null,
+    "database": "psql-todo",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "roberttaylor",
+    "password": null,
+    "database": "psql-todo",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "roberttaylor",
+    "password": null,
+    "database": "psql-todo",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

@@ -8,42 +8,36 @@
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
-
 <body>
 <h2>ToDo List</h2>
     <form action="/" method="post">
-
         <input type="text" name="todo">
         <button type="submit" name="add" value "add">Add todo</button>
-        
-
     </form>
     <div>
     <form action="/mark" method="post">
         <ul>
         {{#todos}}
-        <li><button type="submit" name="id" value={{id}}>Mark complete</button>&nbsp;{{todoitem}}</1i>
+        {{^complete}}
+        <li><button type="submit" name="id" value={{id}}>Mark complete</button>&nbsp;{{todo}}</1i>
+        </form>
+        <form action="/edit" method="post">
+        <button type="submit" name="id" value={{id}}>Edit</button>
+        </form>
+        <form action="/delete" method="post">
+        <button type="submit" name="id" value={{id}}>Delete</button>
+        </form>
+        {{/complete}}
         <br>
-
         {{/todos}}
         </ul>
         <br>
+        <h2>Completed</h2>
+        {{#todos}}
         {{#complete}}
-        {{.}}
+        {{todo}}<br>
         {{/complete}}
-        </form>
+        {{/todos}}
     </div>
-
-
-
-
-
-
-
-
-
-
-
 </body>
-
 </html>

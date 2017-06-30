@@ -1,11 +1,9 @@
 body {
   background-color: yellow;
+  margin: auto;
 }
 
 li {
   display: inline;
   list-style: none;
-  background-color: olivedrab;
 }
-
-
